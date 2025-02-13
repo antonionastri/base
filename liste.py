@@ -46,7 +46,33 @@ if esiste_fr == True:
     print(fr, "trovato")
 else:
     print(fr, "non trovato")
-    
-#too easy
+
+# too easy
+
+# aggiungere elemento
+frutta.append("watermelon")
+print(frutta)
+
+frutta.insert(2, "ananas")
+print(frutta)
+
+# rimozione
+frutta.remove("kiwi")
+
+frutta.pop()  # vuoto rimuove l'ultima dell lista altrimenti l'indice selezionato
+
+# copia (riferimento)
+f = frutta
+print(frutta[0])
+print(f[0])
+
+frutta[0] = "prugna"
+
+print(frutta[0])
+print(f[0])
 
 
+# copia (copia vera)
+f = frutta.copy()
+
+print("FINISH")
