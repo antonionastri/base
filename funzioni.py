@@ -10,6 +10,11 @@ for n in range(5):
     
 # parametro (argomento) di una funzione 
 def saluta(nome):
+    """Funzione che saluta
+
+    Args:
+        nome (str): il nome da salutare
+    """
     print(f"Ciao {nome}!")
     
 saluta("Paolo")
@@ -56,3 +61,32 @@ print(somma_multipla(1, 254, 63, 34))
 
 # print
 print("ciao", "mario", "saluti", 69, True)
+
+print("---------------------------")
+
+# scope delle variabili
+pippo = "pluto"
+def saluta_pippo():
+    global pippo
+    pippo = "pippo"
+    print(f"ciao {pippo}")
+
+saluta_pippo()
+print(pippo)
+
+# lambda
+
+# è un modo per definire funzioni anonime che ritornano un valore
+# e il cui corpo possiamo scriverlo su una sola riga
+
+def quadrato2(x):
+    return x**2
+
+quadrato = lambda x: x**2
+
+print(quadrato(3))
+
+numeri = [1, 2, 3, 4, 5]
+
+maggiori_2 = filter(lambda x: x > 2, numeri)
+print(list(maggiori_2))
