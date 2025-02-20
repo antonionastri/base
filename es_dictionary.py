@@ -43,5 +43,8 @@ citta = bici["disp"][1]["indirizzo"]["citta"]
 print(f"Via {via}, {civico} - {citta}")
 
 qta = bici["disp"][1]["qta"] + bici["disp"][0]["qta"]
+tot=0
+for mag in bici["disp"]:
+    tot += mag["qta"]
 
 print(qta)
