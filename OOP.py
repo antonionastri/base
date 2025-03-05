@@ -35,4 +35,8 @@ anna = Utente("anna", 21)
 anna.corri()
 
 nascita = datetime(1976, 1, 20)
+# timestamp è un metodo di oggetto
 nascita.timestamp()
+
+# now è unn metodo di classe
+adesso = datetime.now()
